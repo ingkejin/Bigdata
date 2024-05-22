@@ -34,11 +34,11 @@
         color : green;
     }
 
-    .bg-sky {
+    .bg-sky p {
         background-color: skyblue;
     }
 
-    .bg-pink {
+    .bg-pink span {
         background-color: pink;
     }
 </style>
@@ -52,11 +52,33 @@
     <!-- block / inline -->
     <!-- block : 가로 사이즈를 100% 차지하는 요소 : div, p, h1~6 -->
     <!-- inline : 본인 내용만큼만 가로 사이즈 차지 : span -->
-    <p class="bg-sky">123</p>
-    <p class="bg-sky">456</p>
+    <div class="bg-sky">
+        <p>123</p>
+        <p>456</p>
+        <p>456</p>
+        <p>456</p>
+        <p>456</p>
+        <p>456</p>
+        <p>456</p>
+    </div>
 
-    <span class="bg-pink">123</span>
-    <span class="bg-pink">456</span>
+    <!--inline 요소 안에 block요소 들어갈 수 없음. -->
+    <span>
+        <div>나는 Block요소여서 inline인 span안에 들어갈 수 없어</div>
+        <p>나도 Block이라 span안에 들어갈 수 없어</p>
+    </span>
+
+    <!-- span : block 요소 안에 특정 부분에만 스타일을 적용하고 싶을 때 사용한다. -->
+    <h2>안녕하세요 저는 <span class="text-red">이예진</span> 입니다.</h2>
+    
+    <div class="bg-pink">
+        <span >123</span>
+        <span>456</span>
+        <span>456</span>
+        <span>456</span>
+        <span>456</span>
+        <span>456</span>
+    </div>
 
     <div class="block">
         나는 Block 요소야.
@@ -82,5 +104,21 @@
     <h4>안녕하세요!</h4>
     <h5>안녕하세요!</h5>
     <h6>안녕하세요!</h6>
+
+    <li>ol, ul자식이 아닌 단독으로 사용 X</li>
+    <!-- Ordered List : 순서가 중요한 리스트 작성 => ol -->
+    <!-- li 태그는 ol과 ul의 자식 요소로 사용한다. -->
+    <ol>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+    </ol>
+
+    <!-- Unordered List : 순서가 중요하지 않은 리스트 => ul -->
+    <ul>
+        <li>딸기</li>
+        <li>망고</li>
+        <li>파인애플</li>
+    </ul>
 </body>
 </html>

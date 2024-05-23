@@ -25,5 +25,7 @@ a {
 }
 
 .line-green {
+  width: 400px;
+  margin: 50px auto;
   border: 5px solid green; 
 }

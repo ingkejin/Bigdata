@@ -12,6 +12,8 @@ a {
 
 .box {
   height: 1000px;
+  /* 좌.상 -> 우.상 -> 우.하 -> 좌.하 */
+  border-radius: 30px;
 }
 
 .line-red {

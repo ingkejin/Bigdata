@@ -95,5 +95,49 @@
       </div>
     </div>
   </div>
+
+  <div class="center">
+    <h2>3. 가운데 정렬</h2>
+    <div>
+      <h3>3.1 float으로 가운데 정렬</h3>
+      <p>
+        1. float에는 center 없으니 float : left; 정렬<br>
+        2. 부모 요소에 자식 총 width 값을 width : 300px; <br>
+        3. margin : 0 auto 가운데 정렬 / box-sizing : border-box
+      </p>
+      <div class="box center-float">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>      
+    </div>
+
+    <div class="clear">
+      <h3>3.2 inline-block으로 가운데 정렬</h3>
+      <p>
+        1. disply : inline-block (박스 좌측 수평 정렬) <br>
+        2. 정렬할 박스 부모에게 text-align : center; 로 가운데 정렬 <br>
+        3. 자신에게 text-align : center로 1,2,3 왼쪽 정렬
+      </p>
+      <div class="box center-inline">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+
+    <div class="clear">
+      <h3>3.3 flex로 가운데 정렬</h3>
+      <p>
+        1. 정렬할 부모 요소에 display : flex; <br>
+        2. 수평 정렬 속성 justify-content : center;
+      </p>
+      <div class="box center-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

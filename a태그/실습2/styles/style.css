@@ -1,0 +1,20 @@
+body {
+  background-color: #000;
+}
+
+.google {
+  width: 500px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+}
+
+.open-google {
+  /* 상.하 / 좌.우 */
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.open-google span {
+  font-weight: 700;
+}

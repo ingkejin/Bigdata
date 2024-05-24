@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Layout</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>박스 배치하기</h1>
+
+  <div class="left">
+    <div>
+      <h2>1.왼쪽으로 정렬</h2>
+      <h3>1.1 float으로 왼쪽 정렬</h3>
+      <p>
+        block박스들에게 float: left를 주되
+        float 속성을 적용한 부모 다음 요소에
+        clear로 플로팅 효과를 지워줘야 한다.
+      </p>
+      <div class="box left-float">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>    
+    </div>
+
+    <div class="clear">
+      <h3>1.2 inline-block으로 왼쪽 정렬</h3>
+      <p></p>
+      <div class="box left-inline">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

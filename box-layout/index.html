@@ -10,11 +10,11 @@
   <h1>박스 배치하기</h1>
 
   <div class="left">
+    <h2>1.왼쪽으로 정렬</h2>
     <div>
-      <h2>1.왼쪽으로 정렬</h2>
       <h3>1.1 float으로 왼쪽 정렬</h3>
       <p>
-        block박스들에게 float: left를 주되
+        block 박스에 float: left를 주되
         float 속성을 적용한 부모 다음 요소에
         clear로 플로팅 효과를 지워줘야 한다.
       </p>
@@ -25,6 +25,7 @@
       </div>    
     </div>
 
+    <!-- float clear -->
     <div class="clear">
       <h3>1.2 inline-block으로 왼쪽 정렬</h3>
       <p>
@@ -45,6 +46,49 @@
         display : flex;를 준다.
       </p>
       <div class="box left-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <h2>2. 오른쪽으로 정렬</h2>
+    <div>
+      <h3>2.1 float으로 오른쪽 정렬</h3>
+      <p>
+        float right정렬할 때는 먼저 1,2,3번 박스 div를 왼쪽으로 
+        옮긴 후, 부모 박스를 float :right로 정렬한다.
+      </p>
+      <div class="box right-float">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+
+    <div class="clear">
+      <h3>2.2 inline-block으로 오른쪽 정렬</h3>
+      <p>
+        1. display : inline-blcok으로 수평 정렬 <br>
+        2. 부모 요소에게 text-align : right로 오른쪽 정렬 <br>
+        3. 본인에게 text-align : left로 1,2,3 글자 왼쪽 정렬
+      </p>
+      <div class="box right-inline">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+
+    <div>
+      <h3>2.3 flex로 오른쪽 정렬</h3>
+      <p>
+        1. 정렬하고 싶은 요소 부모에게 display : flex <br>
+        2. 수평 정렬하는 속성 justify-content : start, center, end
+      </p>
+      <div class="box right-flex">
         <div>1</div>
         <div>2</div>
         <div>3</div>

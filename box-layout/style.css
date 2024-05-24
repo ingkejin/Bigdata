@@ -24,3 +24,26 @@
 .left-flex {
   display: flex;
 }
+
+.right-float {
+  float: right;
+}
+
+.right-float div {
+  float: left;
+}
+
+.right-inline {
+  text-align: right;
+}
+
+.right-inline div {
+  display: inline-block;
+  text-align: left;
+}
+
+.right-flex {
+  display: flex;
+  /* start - left / end - right / center */
+  justify-content: end;
+}

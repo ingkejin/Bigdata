@@ -20,3 +20,7 @@
   /* inline / block / inline-block  */
   display :inline-block;
 }
+
+.left-flex {
+  display: flex;
+}

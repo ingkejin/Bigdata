@@ -1,0 +1,23 @@
+body {
+  background-color: #000;
+}
+
+.google {
+  width: 500px;
+  margin: 150px auto 0 auto;
+  text-align: center;
+}
+
+.bg-white {
+  padding: 20px 0;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.google img {
+  padding: 50px 0;
+}
+
+.txt-underline {
+  text-decoration: underline;
+}

@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  /* flex-warp : nowrap (기본값)
+     wrap : 가로 공간이 부족하면 아래로 떨어진다.
+  */
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 50px auto;
+  font-size: 36px;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: aquamarine;
+}
+
+.left-box {
+  width: 20%;
+  height: 500px;
+  background-color: cornflowerblue;
+}
+
+.right-box {
+  width: 80%;
+  height: 500px;
+  background-color: coral;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: lightgreen;
+}

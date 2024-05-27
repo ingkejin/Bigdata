@@ -1,0 +1,31 @@
+li {
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border: 4px solid red;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.back-img {
+  height: 400px;
+  background-image: url(./images/back.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  color: #fff;
+}

@@ -71,3 +71,28 @@
   display: flex;
   justify-content: center;
 }
+
+.flex {
+  margin-top: 200px;
+}
+
+.flex-box {
+  display: flex;
+  /* flex-direction 기본값 : row */
+  /* flex-direction이 row일 때 
+     justify-content(수평) 
+     align-items (수직)
+  */
+
+  /* flex-direction이 column일 때 
+     justify-content(수직) 
+     align-items (수평)
+  */
+  flex-direction: column;
+  /* 수평 정렬 */
+  justify-content: center;
+  /* 수직 정렬 */
+  /* align-items: center; */
+  height: 800px;
+  border: 5px solid blue;
+}

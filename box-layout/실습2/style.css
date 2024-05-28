@@ -90,3 +90,41 @@ a {
 .second-box p {
   margin-top: 24px;
 }
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.card-list div {
+  width: 300px;
+  margin: 0 20px;
+  padding: 50px 16px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.card-list div p {
+  margin-top: 20px;
+}
+
+.global-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #333;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.footer-link a {
+  padding: 0 12px;
+  color: #fff;
+}

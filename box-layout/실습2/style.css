@@ -43,3 +43,50 @@ a {
   color: dodgerblue;
   text-decoration: underline;
 }
+
+.back-img {
+  height: 600px;
+  background-image: url(./images/back.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  color: #fff;
+}
+
+.back-txt p,
+.back-txt button {
+  margin-top: 20px;
+}
+
+.back-txt p {
+  font-size: 18px;
+}
+
+.back-txt button {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.second-box {
+  width: 500px;
+  /* margin : top right bottom left */
+  margin: -66px auto 0 auto;
+  /* top,bottom / right/left */
+  padding: 40px 36px;
+  text-align: center;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #000;
+}
+
+.second-box p {
+  margin-top: 24px;
+}

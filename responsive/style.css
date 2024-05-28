@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+}
+
+.global-header,
+.global-footer {
+  color: #fff;
+  font-size: 36px;
+  padding: 30px 0;
+  background-color: blue;
+}
+
+.back-img {
+  height: 500px;
+  background-image: url(./images/눈.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.card-list div {
+  width: 30%;
+  height: 200px;
+  border: 1px solid blue;
+}

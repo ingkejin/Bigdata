@@ -39,3 +39,28 @@
 .scroll {
   height: 1600px;
 }
+
+  
+.back-box {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  height: 600px;
+  background-color: #ccc;
+}
+
+.back-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-image: url(https://image.newsis.com/2023/07/12/NISI20230712_0001313626_web.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* 기본값 : scroll */
+  background-attachment: fixed;
+}

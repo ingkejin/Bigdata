@@ -128,3 +128,24 @@ a {
   padding: 0 12px;
   color: #fff;
 }
+
+/* 1200px / 768px */
+@media screen and (max-width: 1200px) {
+  .card-list {
+    width: 70%;
+    flex-direction: column;
+    margin: 50px auto 0 auto;
+  }
+  
+  .card-list div {
+    width: 100%;
+    margin: 12px 0;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .card-list {
+    width: 90%;
+  }
+}

@@ -60,3 +60,35 @@ body {
 .gnb-list li a:hover {
   color: dodgerblue;
 }
+
+.back-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  color: #fff;
+  background-image: url(./assets/images/스누피배경.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back-img h2 {
+  font-size: 42px;
+}
+
+.back-img p {
+  width: 800px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.popup-open-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}

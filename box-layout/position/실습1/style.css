@@ -92,3 +92,105 @@ body {
   background-color: #fff;
   cursor: pointer;
 }
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.card-list div {
+  width: 30%;
+  text-align: center;
+  padding: 20px 12px;
+  border-radius: 12px;
+  background-color: rgb(185, 235, 255);
+}
+
+.card-list div p {
+  margin-top: 12px;
+}
+
+.fix-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: rgb(185, 235, 255);
+}
+
+.fix-box div {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-attachment: fixed;
+}
+
+.fix-img1 {
+  margin-right: 20px;
+  background-image: url(./assets/images/pngegg.png);
+  background-position: bottom left 260px;
+}
+
+.fix-img2 {
+  background-image: url(./assets/images/스누피2.png);
+  background-position: bottom right 240px;
+}
+
+.global-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: #fff;
+  background-color: skyblue;
+}
+
+.sns-link {
+  display: flex;
+}
+
+.sns-link li a {
+  padding: 12px;
+}
+
+.sns-link li a i {
+  font-size: 30px;
+  transition: color 300ms;
+}
+
+.sns-link li a i:hover {
+  color: dodgerblue;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.top-btn a i {
+  font-size: 40px;
+  color: rgb(14, 101, 135);
+}
+
+.quick-menu {
+  position: fixed;
+  top: 120px;
+  right: 50px;
+}
+
+.quick-menu ul {
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.quick-menu ul li a {
+  color: #333;
+}

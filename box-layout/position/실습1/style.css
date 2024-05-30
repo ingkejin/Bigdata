@@ -194,3 +194,62 @@ body {
 .quick-menu ul li a {
   color: #333;
 }
+
+@media screen and (max-width : 1200px) {
+  .card-list {
+    width: 70%;
+    flex-direction: column;
+  }
+  
+  .card-list div {
+    width: 100%;
+    margin: 12px 0;
+    text-align: center;
+  }
+
+  .fix-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgb(185, 235, 255);
+  }
+  
+  .fix-box div {
+    background-color: transparent;
+  }
+  
+  .fix-img1 {
+    margin-right: 0;
+    background-image: url(./assets/images/pngegg.png);
+    background-position: bottom center;
+  }
+  
+  .fix-img2 {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width : 768px) {
+  .card-list {
+    width: 90%;
+  }
+
+  .global-footer {
+    flex-direction: column;
+    margin-top: 12px;
+  }  
+
+  .sns-link li a {
+    padding: 8px;
+  }
+  
+  .sns-link li a i {
+    font-size: 20px;
+  }
+
+  .quick-menu {
+    display: none;
+  }
+}

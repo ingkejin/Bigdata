@@ -35,6 +35,20 @@ let sidebarCloseBtn = document.querySelector('.sidebar-close-btn');
 // })
 
 
+function openSidebar(){
+  // 1. sidebar 라는 클래스에 is-active 클래스 추가
+  sidebar.classList.add('is-active');
+}
+
+function CloseSidebar(){
+  // 1. sidebar 라는 클래스에 is-active 클래스 제거
+  sidebar.classList.remove('is-active');
+}
+
+sidebarOpenBtn.addEventListener('click', openSidebar);
+sidebarCloseBtn.addEventListener('click', CloseSidebar);
+
+
 // 함수 소괄호 안 : 매개변수
 function plus (num1, num2) {
   console.log(num1, num2)
@@ -44,3 +58,5 @@ function plus (num1, num2) {
 
 // 함수는 호출했을 때 실행된다
 plus(100, 10);
+
+

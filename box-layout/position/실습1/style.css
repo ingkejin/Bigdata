@@ -231,6 +231,7 @@ body {
 }
 
 .sidebar {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -293,8 +294,18 @@ body {
 }
 
 @media screen and (max-width : 768px) {
+  .sm-hidden {
+    display: none;
+  }
+
   .sm-only {
     display: block;
+  }
+
+  .sidebar-open-btn {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
   }
 
   .card-list {

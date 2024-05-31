@@ -14,3 +14,22 @@ popupOpenBtn.addEventListener('click', function(){
 popupCloseBtn.addEventListener('click', function() {
   popup.classList.remove('is-active');
 })
+
+
+// sidebar 
+let sidebar = document.querySelector('.sidebar');
+let sidebarOpenBtn = document.querySelector('.sidebar-open-btn');
+let sidebarCloseBtn = document.querySelector('.sidebar-close-btn');
+
+// 1. sidebarOpenBtn을 클릭 했을 때 
+// sidebar에 is-active 클래스 추가 
+sidebarOpenBtn.addEventListener('click', function(){
+  // sidebarOpenBtn 클릭 했을 때 sidebar에
+  // is-active라는 클래스 추가
+  sidebar.classList.add('is-active');
+})
+
+// sidebarCloseBtn 클릭 했을 때, sidebar에 is-active 클래스 제거
+sidebarCloseBtn.addEventListener('click', function(){
+  sidebar.classList.remove('is-active');
+})

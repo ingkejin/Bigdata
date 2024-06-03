@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -30,4 +30,94 @@ button {
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+/* 모바일 버전에서만 보일 요소 */
+.sm-only {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+}
+
+.logo img {
+  width: 60px;
+} 
+
+.gnb-list {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.gnb-list li a {
+  font-weight: 700;
+  transition: color 300ms ease-in-out;
+}
+
+.gnb-list li a:hover {
+  color: rgb(235, 27, 27);
+}
+
+.search-btn {
+  cursor: pointer;
+}
+
+.lnb {
+  position: sticky;
+  left: 0;
+  top: 0;
+  border-top: 2px solid rgb(255, 213, 23);
+  background-color: rgb(235, 27, 27);
+}
+
+.lnb-list {
+  display: flex;
+  padding: 12px 40px;
+}
+
+.lnb-list a {
+  color: #fff;
+  padding-right: 16px;
+}
+
+.back-img {
+  height: 600px;
+  background-image: url(./assets/images/back.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-list {
+  display: flex;
+  /* flex-wrap 기본값 nowrap (공간이 부족해도 수평정렬) */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.menu-item {
+  width: calc((100% - 60px) / 3);
+  margin: 16px 0; 
+  text-align: center;
+  border-radius: 12px;
+  /* offset-x | offset-y | blur */
+  box-shadow: 3px 3px 5px #e1e1e1;
+  overflow: hidden;
+  transition: opacity 300ms ease-in-out;
+}
+
+.menu-item a:hover {
+  /* opacity 기본값 1 (불투명) */
+  opacity: 0.5;
+}
+
+.menu-item img {
+  width: 100%;
 }

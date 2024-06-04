@@ -1,0 +1,261 @@
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+/* 모바일 버전에서만 보일 요소 */
+.sm-only {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+}
+
+.logo img {
+  width: 60px;
+} 
+
+.gnb-list {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.gnb-list li a {
+  font-weight: 700;
+  transition: color 300ms ease-in-out;
+}
+
+.gnb-list li a:hover {
+  color: rgb(235, 27, 27);
+}
+
+.search-btn {
+  cursor: pointer;
+}
+
+.lnb {
+  position: sticky;
+  left: 0;
+  top: 0;
+  border-top: 2px solid rgb(255, 213, 23);
+  background-color: rgb(235, 27, 27);
+}
+
+.lnb-list {
+  display: flex;
+  padding: 12px 40px;
+}
+
+.lnb-list a {
+  color: #fff;
+  padding-right: 16px;
+}
+
+.back-img {
+  height: 600px;
+  background-image: url(./assets/images/back.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-list {
+  display: flex;
+  /* flex-wrap 기본값 nowrap (공간이 부족해도 수평정렬) */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.menu-item {
+  width: calc((100% - 60px) / 3);
+  margin: 16px 0; 
+  text-align: center;
+  border-radius: 12px;
+  /* offset-x | offset-y | blur */
+  box-shadow: 3px 3px 5px #e1e1e1;
+  overflow: hidden;
+}
+
+.menu-item a {
+  transition: opacity 300ms ease-in-out;
+}
+
+.menu-item a:hover {
+  /* opacity 기본값 1 (불투명) */
+  opacity: 0.5;
+}
+
+.menu-item img {
+  width: 100%;
+}
+
+.mac-story {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  padding: 8px 0;
+  border-top: 2px solid rgb(255, 213, 23);
+  background-color: #fff;
+}
+
+.mac-story-list {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mac-story-list li img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(235, 27, 27); 
+}
+
+.footer-1 {
+  margin-right: 20px;
+}
+
+.txt-yellow a {
+  color: rgb(255, 213, 23);
+}
+
+footer ul li,
+footer ul li a {
+  color: #fff;
+}
+
+.footer-info {
+  flex-grow: 1;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.footer-link li {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color 300ms ease-in-out;
+}
+
+.footer-link li:hover {
+  background-color: rgb(235, 27, 27);
+}
+
+.footer-link li i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: rgb(235, 27, 27);
+  transition: color 300ms ease-in-out;
+}
+
+.footer-link li:hover i {
+  color: #fff;
+}
+
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.search > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.search-box {
+ display: flex;
+ width: 100%;
+}
+
+.search-box input {
+  flex-grow: 1;
+  margin-right: 20px;
+  border-radius: 30px;
+  padding: 24px 40px;
+}
+
+.search-box button {
+  background-color: rgb(255, 213, 23);
+}
+
+.search-close-btn {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-top: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(255, 213, 23);
+}
+
+.search-close-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+}

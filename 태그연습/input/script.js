@@ -14,6 +14,33 @@ userid.addEventListener('focusout', function() {
   }
 })
 
+let userpw = document.getElementById('userpw');
+let pwWarn = document.querySelector('.pw-warn');
+
+userpw.addEventListener('focusout', function() {
+// 1. 비밀번호 자릿수 (최소 8자에서 16자까지)
+// 2. 최소 하나 이상의 영문자 (소문자 or 대문자)
+// 3. 최소 하나 이상의 숫자
+// 4. 최소 하나 이상의 특수문자 (!@#$%^&*?_)
+  let pwExp = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*?_]).{8,16}$/;
+  // pwExp.test(userpw.value)
+  // test() : 정규식 일치 여부를 Boolean 값으로 반환한다. true, false
+  console.log(userpw.value)
+  console.log(userpw.value.length)
+
+  if(!pwExp.test(userpw.value)) {
+    pwWarn.innerHTML = `<span class="txt-red">8~16자 영문 대 소문자, 숫자를 사용하세요.</span>`
+  } else {
+    pwWarn.innerHTML = '';
+  }
+})
+
+// 비밀번호 재확인
+// userpw.value 값과 userPwChk.value 값 비교
+// 일치하지 않을 때 => 비밀번호가 일치하지 않습니다. 
+// 일치할 때 => '';
+
+
 let year = document.getElementById('year');
 let month = document.getElementById('month');
 let date = document.getElementById('date');

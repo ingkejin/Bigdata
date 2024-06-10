@@ -1,24 +1,24 @@
-let year = document.querySelector('.year');
+let year = document.getElementById('year');
+let month = document.getElementById('month');
+let date = document.getElementById('date');
 
-// 한국 표준시 (Korea Standard Time)
 let kst = new Date();
+let getYear = kst.getFullYear();
 
-let getYear = kst.getFullYear(); // 년도
-let getMonth = kst.getMonth() + 1; // 월
-let getDate = kst.getDate(); // 일
-
-
+// 1920 i값이 getYear(2024)와 작거나 같을 때 까지
+// i를 1씩 더하며 반복
 for(let i = 1920; i <= getYear; i++) {
-  // let options = document.createElement('option');
-  // options.innerHTML = i;
-  // year.appendChild(options);
+  let option = `<option>${i}</option>`;
+  year.insertAdjacentHTML('beforeend', option);
+}
 
-  let options = `<option>${i}</option>`;
-  // afterbegin, beforebegin, afterend, beforend
-  // 추가하고싶은곳.insertAdjacentHTML('위치', 추가할요소)
-  year.insertAdjacentHTML('beforeend', options);
+for(let i = 1; i <= 12; i++) {
+  let option = `<option>${i}</option>`;
+  month.insertAdjacentHTML('beforeend', option);
+}
 
-  // jQuery
-  $('.year').append('<option>' + i + '</option>');
+for(let i = 1; i <= 31; i++) {
+  let option = `<option>${i}</option>`;
+  date.insertAdjacentHTML('beforeend', option);
 }
 

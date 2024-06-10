@@ -11,50 +11,88 @@
 <body>
   <div class="wrapper">
     <h1>회원가입</h1>
-    <P>회원가입 페이지 입니다.</P>
+    <p>
+      회원가입 페이지 입니다. 본사는 고객님들의 개인정보를 소중하고 안전하게 보관하고 있습니다.<br>
+      불편사항이 있으시면 042-1234-1234로 연락주시기 바랍니다.
+    </p>
 
-    <!-- <table border="1">
-      <tr>
-        <th>이름</th>
-        <th>성별</th>
-      </tr>
-
-      <tr>
-        <td>이예진</td>
-        <td>여성</td>
-      </tr>
-    </table> -->
-
-    <!-- action : 데이터가 전송될 서버 URL -->
-    <!-- method : 데이터를 전송하는 방식(HTTP 메소드)을 지정한다 -->
-    <!-- 값이 비어있을 때 기본값 : GET -->
-    <form action="./action.html" method="GET">
+    <form id="join-form" action="./action.html" method="GET">
       <table>
-        <tr>
-          <td>아이디 :</td>
-          <td><input type="text"></td>
-        </tr>
+        <!-- tr, th, td -->
+         <tr>
+          <td>
+            <label for="userid">아이디</label>
+          </td>
+          <td>
+            <input id="userid" placeholder="아이디를 입력하세요." type="text">
+            <button type="button">아이디 중복체크</button>
+          </td>
+         </tr>
+
+         <tr>
+          <td>
+            <label for="userpw">비밀번호</label>
+          </td>
+          <td>
+            <input id="userpw" type="password">
+          </td>
+         </tr>
+
+         <tr>
+          <td>
+            <label for="user-pwchk">비밀번호 재확인</label>
+          </td>
+          <td>
+            <input id="user-pwchk" type="password">
+          </td>
+         </tr>
+
+         <tr>
+          <td>
+            <label for="username">이름</label>
+          </td>
+          <td>
+            <input id="username" type="text">
+          </td>
+         </tr>
+
+         <tr>
+          <td>
+            <label for="user-email">이메일</label>
+          </td>
+          <td>
+            <input id="user-email" type="eamil">
+          </td>
+         </tr>
+
+         <tr>
+          <td>
+            <label for="user-nation">국적</label>
+          </td>
+          <td>
+            <select id="user-nation" name="nation" >
+              <optgroup label="Asia">
+                <option value="kor">대한민국</option>
+                <option value="jap">일본</option>
+                <option value="chi">중국</option>
+                <option value="" disabled>북한</option>
+              </optgroup>
+            </select>
+          </td>
+         </tr>
+
+         <tr>
+          <td>생년월일</td>
+          <td>
+            <span><select name="" id="year"></select>년</span>
+            <span><select name="" id="month"></select>월</span>
+            <span><select name="" id="date"></select>일</span>
+          </td>
+         </tr>
       </table>
-
-      <select class="year" name="" id="">
-
-      </select>
-
-      <!-- radio : 중복 선택 X -->
-      <!-- checkbox : 중복 선택 O -->
-      <span>남자<input type="checkbox" name="gender"></span>
-      <span>여자<input type="checkbox" name="gender"></span>
-
-      <input type="range">
-
-      <input type="color">
-      <input type="file">
-      <textarea name="" id=""></textarea>
-
-      <input type="submit">
-      <input type="reset">
     </form>
   </div>
+
   <script src="./script.js"></script>
 </body>
 </html>
